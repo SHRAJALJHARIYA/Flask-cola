@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coca-cola theme change</title>
+    <link rel="stylesheet" href="./../static/css/style.css" class="html">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="section1">
+            <img id="main" onclick="changeHue(this)" src="./../static/images/can.png">
+        </div>
+
+    </div>
+    <footer id="foot" class="footer">
+        <img id="img1" onclick="changeHue1()" src="./../static/images/can.png ">
+        <img id="img2" onclick="changeHue2()" src="./../static/images/can.png">
+        <img id="img3" onclick="changeHue3()" src="./../static/images/can.png">
+    </footer>
+</body>
+<script>
+    // function color(Element) {
+    //     document.getElementById("main").styel.hueRotate = "400";
+    // }
+    // let c1 = document.querySelector("img1");
+    // let c2 = document.querySelector("img2");
+    // let c3 = document.querySelector("img3");
+
+    // c1.addEventListener("Click", color(this));
+
+    // function color() {
+
+    // }
+    // <img id="main" src="can.png" onclick="changeHue()">
+    let a = document.getElementById("container");
+    let foot = document.getElementById("foot");
+
+    function changeHue1() {
+        let img = document.getElementById("main");
+        img.style.filter = "hue-rotate(600deg)";
+        a.style.backgroundColor = "red";
+        foot.style.backgroundColor = "blue";
+
+    }
+    function changeHue2() {
+        let img = document.getElementById("main");
+        img.style.filter = "hue-rotate(500deg)";
+        a.style.backgroundColor = "rgb(213, 24, 255)";
+        foot.style.backgroundColor = "red";
+    }
+    function changeHue3() {
+        let img = document.getElementById("main");
+        img.style.filter = "hue-rotate(642.6deg)";
+        a.style.backgroundColor = "yellow";
+        foot.style.backgroundColor = "lime";
+    }
+</script>
+
+
+
+</script>
+
+
+</html>
